@@ -1,37 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Bom Pastor PetCare - Início</title>
     <meta charset="UTF-8">
+    <title>Bom Pastor PetCare - Início</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-<header>
+<header class="text-center p-3 bg-light">
     <h1>Bom Pastor PetCare</h1>
+
     <nav>
         <a href="index.html">Início</a> |
         <a href="produtos.html">Produtos</a> |
-        <a href="servicos.html">Serviços</a>
+        <a href="servicos.html">Serviços</a> |
+        <a href="cadastro.html">Cadastro</a>
     </nav>
-    <hr>
 </header>
-
-<h2>Bem-vindo ao Bom Pastor PetCare!</h2>
-<p>Seu petshop completo para cuidados, alimentação e bem-estar do seu pet.</p>
-
-<h3>Categorias de Produtos</h3>
-<ul>
-    <li>Acessórios</li>
-    <li>Rações</li>
-    <li>Higiene</li>
-</ul>
 
 <hr>
 
-    <footer>
-        <p>© 2025 Bom Pastor PetCare</p>
-        <p>Desenvolvido por: Evelyne Rezende</p>
-        <p>Email: contato@bompastorpetcare.com</p>
-    </footer>
+<!-- CARROSSEL BOOTSTRAP -->
+<div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="img/carrossel1.jpg" class="d-block w-100" alt="Profissional realizando banho e tosa em cachorro">
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/carrossel2.jpg" class="d-block w-100" alt="Produtos e acessórios organizados em prateleiras de petshop">
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/carrossel3.jpg" class="d-block w-100" alt="Atendente cuidando de cachorro no petshop">
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+<hr>
+
+<section class="text-center">
+    <h2>Bem-vindo ao Bom Pastor PetCare!</h2>
+    <p>Seu petshop completo para cuidados, alimentação e bem-estar do seu pet.</p>
+</section>
+
+<footer class="text-center mt-5">
+    <hr>
+    © 2025 Bom Pastor PetCare <br>
+    Desenvolvido por: Evelyne Rezende <br>
+    Email: contato@bompastorpetcare.com
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Meu JS -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
